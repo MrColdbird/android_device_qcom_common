@@ -39,6 +39,7 @@
 #define UNUSED(a)       ((void)(a))
 #define ISMATCH(a,b)    (!strncmp(a,b,PROP_VALUE_MAX))
 
+int read_file2(const char *fname, char *data, int max_size);
 void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *board_type);
 
 #endif /* __INIT_MSM__H__ */
